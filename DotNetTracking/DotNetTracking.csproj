@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/HakanL/DotNetTracking</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>Tracking USPS UPS FedEx DHL OnTrac</PackageTags>
+	<Title>DotNetTracking</Title>
   </PropertyGroup>
 
 </Project>
