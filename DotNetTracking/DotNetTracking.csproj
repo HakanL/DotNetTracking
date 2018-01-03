@@ -8,6 +8,10 @@
     <Deterministic>False</Deterministic>
     <Company>Haukcode</Company>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <PackageProjectUrl>https://github.com/HakanL/DotNetTracking</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HakanL/DotNetTracking</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>Tracking USPS UPS FedEx DHL OnTrac</PackageTags>
   </PropertyGroup>
 
 </Project>
