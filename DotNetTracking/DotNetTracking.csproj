@@ -2,17 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Haukcode.DotNetTracking</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Hakan Lindestaf</Authors>
-    <Deterministic>False</Deterministic>
     <Company>Haukcode</Company>
-    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <Product>DotNetTracking</Product>
+    <RootNamespace>Haukcode.DotNetTracking</RootNamespace>
+    <Description>Library to validate the format of various tracking numbers. Currently supports UPS, FedEx, USPS, DHL and OnTrac.</Description>
+    <PackageReleaseNotes>1.0.0 - Initial release</PackageReleaseNotes>
+    <Copyright>(C) Copyright 2018, Hakan Lindestaf</Copyright>
     <PackageProjectUrl>https://github.com/HakanL/DotNetTracking</PackageProjectUrl>
     <RepositoryUrl>https://github.com/HakanL/DotNetTracking</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <PackageTags>Tracking USPS UPS FedEx DHL OnTrac</PackageTags>
-	<Title>DotNetTracking</Title>
+    <PackageLicenseUrl>https://github.com/HakanL/DotNetTracking/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
 </Project>

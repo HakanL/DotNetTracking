@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-[assembly: System.Reflection.AssemblyVersion("1.0.*")]
-
 // Credit: https://github.com/jkeen/tracking_number
 
 namespace Haukcode.DotNetTracking
