@@ -13,6 +13,8 @@ namespace Haukcode.DotNetTracking
 
         public override string Carrier => "DHL";
 
+        public override string TrackingURL => $"http://www.dhl.com/en/express/tracking.html?AWB={Input}&brand=DHL";
+
         protected static bool IsValidCheckSum(string input)
         {
             // Standard mod 7 check

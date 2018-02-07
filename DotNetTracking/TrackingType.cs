@@ -19,6 +19,8 @@ namespace Haukcode.DotNetTracking
 
         public abstract string Carrier { get; }
 
+        public abstract string TrackingURL { get; }
+
         public abstract bool IsValid { get; }
 
         public string Input => this.input;

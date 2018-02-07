@@ -16,6 +16,8 @@ namespace Haukcode.DotNetTracking
 
         public override string Carrier => "OnTrac";
 
+        public override string TrackingURL => $"http://www.ontrac.com/trackingres.asp?tracking_number={Input}";
+
         public override bool IsValid => IsInputValid(Input);
 
         private static bool IsInputValid(string input)

@@ -13,6 +13,8 @@ namespace Haukcode.DotNetTracking
 
         public override string Carrier => "USPS";
 
+        public override string TrackingURL => $"https://tools.usps.com/go/TrackConfirmAction?tLabels={Input}";
+
         public static TrackingType Match(string input)
         {
             string fixedOutput;

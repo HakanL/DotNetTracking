@@ -13,6 +13,8 @@ namespace Haukcode.DotNetTracking
         {
         }
 
+        public override string TrackingURL => $"https://www.fedex.com/apps/fedextrack/?tracknumbers={Input}";
+
         public static TrackingType Match(string input)
         {
             if (FedExExpress.IsInputValid(input))

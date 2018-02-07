@@ -124,6 +124,8 @@ namespace Haukcode.DotNetTracking
 
         public override bool IsValid => IsInputValid(Input);
 
+        public override string TrackingURL => $"https://wwwapps.ups.com/WebTracking/track?track=yes&trackNums={Input}";
+
         private static bool IsInputValid(string input)
         {
             if (input.Length != 18)
