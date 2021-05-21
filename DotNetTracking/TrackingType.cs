@@ -52,18 +52,20 @@ namespace Haukcode.DotNetTracking
             }
         }
 
-        public static (IEnumerable<int> Sequence, int CheckDigit) GetDigits(string input)
+        public static IEnumerable<int> GetDigits(string input, out int CheckDigit)
         {
             var all = input.ToCharArray().Select(x => int.Parse(x.ToString()));
+            CheckDigit = all.Last();
 
-            return (WithoutLast(all), all.Last());
+            return WithoutLast(all);
         }
 
-        public static (IEnumerable<char> Sequence, char CheckDigit) GetSequence(string input)
+        public static IEnumerable<char> GetSequence(string input, out char CheckDigit)
         {
             var all = input.ToCharArray();
+            CheckDigit = all.Last();
 
-            return (WithoutLast(all), all.Last());
+            return WithoutLast(all);
         }
 
         public static TrackingType[] GetMatches(string input)

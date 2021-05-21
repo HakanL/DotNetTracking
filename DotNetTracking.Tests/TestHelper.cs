@@ -10,7 +10,8 @@ namespace Haukcode.DotNetTracking.Tests
     {
         private static string ChangeCheckDigit(string input)
         {
-            var (seq, last) = TrackingType.GetSequence(input);
+            char last;
+            var seq = TrackingType.GetSequence(input, out last);
             int.TryParse(last.ToString(), out int checkDigit);
             char newCheckDigit = (checkDigit <= 2 ? checkDigit + 3 : checkDigit - 3).ToString()[0];
 

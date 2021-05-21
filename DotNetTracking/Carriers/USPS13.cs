@@ -28,7 +28,8 @@ namespace Haukcode.DotNetTracking
             if (!numericSequence.Success)
                 return false;
 
-            var (sequence, checkDigit) = GetDigits(numericSequence.Value);
+            int checkDigit;
+            var sequence = GetDigits(numericSequence.Value, out checkDigit);
 
             var data = sequence.Zip(new int[] { 8, 6, 4, 2, 3, 5, 9, 7 }, (a, b) => a * b);
             int total = data.Sum();

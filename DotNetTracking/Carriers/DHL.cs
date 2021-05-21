@@ -18,7 +18,8 @@ namespace Haukcode.DotNetTracking
         protected static bool IsValidCheckSum(string input)
         {
             // Standard mod 7 check
-            var (sequence, checkDigit) = GetDigits(input);
+            int checkDigit;
+            var sequence = GetDigits(input, out checkDigit);
 
             long value = long.Parse(string.Join("", sequence));
 

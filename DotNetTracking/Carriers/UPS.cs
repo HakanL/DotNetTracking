@@ -134,7 +134,8 @@ namespace Haukcode.DotNetTracking
             if (!Regex.Match(input, VerifyPattern).Success)
                 return false;
 
-            var (sequence, checkDigit) = GetSequence(input);
+            char checkDigit;
+            var sequence = GetSequence(input, out checkDigit);
 
             int total = sequence
                 .Skip(2)
