@@ -33,7 +33,8 @@ namespace Haukcode.DotNetTracking
 
         protected static bool IsValidCheckSum(string input)
         {
-            var (sequence, checkDigit) = GetDigits(input);
+            int checkDigit;
+            var sequence = GetDigits(input, out checkDigit);
 
             int total = sequence.Reverse().Select((x, i) => (i % 2 == 0) ? x * 3 : x).Sum();
 
