@@ -77,6 +77,7 @@ namespace Haukcode.DotNetTracking
             Match(input, ref list, DHL.Match);
             Match(input, ref list, OnTrac.Match);
             Match(input, ref list, USPS.Match);
+            Match(input, ref list, Amazon.Match);
 
             return list.ToArray();
         }
